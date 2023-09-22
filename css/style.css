@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
 
 /* font link always on top of css file,
 import click kore "style" tag chara baki tuku nite hobe */
@@ -32,18 +32,30 @@ img {
   justify-content: center;
 }
 
+.justify-space-around {
+  justify-content: space-around;
+}
+
 .gap-10 {
   gap: 10px;
+}
+.gap-20 {
+  gap: 20px;
 }
 /* ========== Header Section Start ========== */
 
 header {
-  background-color: #fafafa;
-  border: 2px solid #00514a1a;
+  /* background-color: #fafafa; */
+  background-color: #fff;
+  border: 1px solid #00514a1a;
   padding: 15px;
 }
 .container {
   max-width: 1250px;
+  margin: auto;
+}
+.large-container{
+  max-width: 1350px;
   margin: auto;
 }
 .logo {
@@ -57,6 +69,7 @@ nav {
   max-width: 53%;
   /* width: 100%; */
   flex-basis: 53%;
+
 
   /* width er bodole flex-basis use kora jay,
   80% width puratai jate pay tai extra vabe flex-basis use kora,
@@ -80,7 +93,9 @@ nav ul li a {
   border-radius: 8px;
   transition-duration: 0.4s;
   letter-spacing: -0.5px;
-  font-family: 'Poppins', sans-serif"
+  font-family: "Poppins",
+    sans-serif
+      "
   /* anchor tag block element noy,
   tai padding debar pore display: block kore deya hoise,
   ete kore valo vabe kaj korbe */
@@ -93,7 +108,9 @@ nav ul li a:hover {
 
   /* Hover transition duration jodi only :hover e deya hoy,
   taile menu theke mouse sorale effect hobe na, only mouse rakhle effect hobe,
-  tai main "a" tag e transition-duration deya hoise, jate mouse rakhle & sorale
+  tai main "
+      a
+      " tag e transition-duration deya hoise, jate mouse rakhle & sorale
   both time transition - duration ta hoy*/
 }
 
@@ -110,7 +127,9 @@ nav ul li a:hover {
   background-size: cover;
   background-blend-mode: overlay;
 
-  /* ".." double dot diye ekbar directory te back gesi */
+  /* "
+      ..
+      " double dot diye ekbar directory te back gesi */
   /* background-position-y: diye bg-image upore niche y axis crop hoye gele,
   upore nihce up down adjust kore jay */
   /* background-size: cover dile image full width e ase, contain dile full asbe na */
@@ -119,51 +138,175 @@ nav ul li a:hover {
   color depend kore image + bg color er combination er upore */
 }
 
-/* .hero-content {
-} */
+.hero-content {
+  margin: auto;
+}
+
 .hero-content h1 {
-  font-size: 86px;
-  color: #569eee;
-  line-height: 75px;
+  font-size: 92px;
+  color: #569EEE;
+  line-height: 32px;
   font-weight: 900;
   /* text-align: center; */
-  font-family: "Poppins", sans-serif;
+
 }
+
+
 .hero-content p {
   color: #000;
   font-size: 21px;
   margin-top: 25px;
   /* text-align: center; */
 }
+/* ========== Service Section ========== */
 
-/* ========== Gallery Section ========== */
-
-.gallery-section {
-  padding: 50px 0;
+.service-section {
+  padding: 72px;
 }
-.gallery-image {
-  flex-basis: 33.33%;
-  padding: 8px;
-}
-.gallery-image img {
-  /* height: 100%; */
-  width: 100%;
-  /* aspect-ratio: 1; */
-  aspect-ratio: 6/7;
-  object-fit: cover;
 
+.service-section-bg{
+  background: #ffffff url(../images/bg1.png);
+  /* min-height: 600px; */
+  background-repeat: no-repeat;
+  /* background-position-y: center; */
+  background-size: cover;
+  background-position: left;
+  background-size: 80%;
+  /* background-blend-mode: overlay; */
+}
+
+.service-section-bg2{
+  background-color: #faf5f9;
+}
+.col_1_2{
+  max-width: 45%;
+  flex-basis: 45%;
+}
+.col_1_2 img{
+  border-radius: 10px;
+  box-shadow: 5px 4px 12px rgb(187, 185, 185);
+}
+.text-info{
+  padding: 0 56px;
+}
+.text-info h2 { 
+  font-size: 33px;
+  line-height: 36px;
+  margin-bottom: 10px;
+  font-family: 'Lato', sans-serif;
+}
+.text-info p {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: 0.1px;
+}
+.text-info a {
+  font-family: 'Nunito', sans-serif;
+  margin-top: 10px;
+  font-style: italic;
   display: block;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+
+  /* "a" tag is not block element,
+  to apply style, we have to make it display: block; */
+}
+
+/* ========== Experience Section ========== */
+
+.experience-section{
+  padding: 60px 0;
+  background-color: #f9fafb;
+}
+.experience-section > h2 {
+  color: #1593d6;
+  font-size: 39px;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+.single-experience {
+  flex-basis: 42%;
+  padding: 41px 42px;
+  margin: 33px;
+  background: #ffffff url(../images/bg2.png);
+  /* min-height: 600px; */
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-size: cover;
+  /* background-position: center; */
+
+  background-size: 110%;
+  /* background-blend-mode: overlay; */
+
+  border: 2px solid #b0b6bf2b;
   border-radius: 12px;
+}
 
-  /***** [image fitting uporer 3ta diye kora jay, abar nicher 3ta diyeo kora jay] *****/
+.single-experience h2 {
+  .hero-content: ;
+  font-family: 'Poppins', sans-serif;
+  font-size: 29px;
+  color: #374151;
+}
+.single-experience p {
+  font-family: 'Lato', sans-serif;
+  margin-top: 6px;
+  line-height: 20px;
+}
 
-  /* height: 350px;
-  object-fit: cover;
-  object-position: right; */
+/* ========== Last Achievement Section ========== */
 
-  /* object fit: cover dile sob img ratio thik thake,  */
-  /* object position: er onek gula option ase, jeta valo fit hoy, */
+.achievement-section {
+  padding: 70px 0 60px 0;
+}
+.single-achievement {
+  height: 100%;
+  flex-basis: 33.33%;
+  padding: 27px;
+  display: block;
+}
+.single-achievement h2 {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 27px;
+  margin-bottom: 48px;
+  font-weight: 700;
+}
+.single-achievement p {
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+}
 
-  /***** display: block --> by default image er bottom e ekta space pay,
-  eta remove korte display: block korte hoy *****/
+.single-achi-bg-color-blue {
+  
+  padding: 50px 50px 15px 50px;
+  height: 306.4px;
+  border-radius: 25px;
+  background-color: rgba(3, 147, 204, 1);
+    color: white;
+}
+.single-achi-bg-color-grey {
+  padding: 50px 50px 15px 50px;
+  height: 306.4px;
+  border-radius: 12px;
+  background-color: rgba(245, 245, 245, 1);
+  color: black;
+}
+
+/* ========== Footer ========== */
+
+.footer-edit{
+  background-color: #0393cc;
+padding: 37px 30px;
+}
+.footer-edit p{
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  color: #cdd2d8;
+
 }
