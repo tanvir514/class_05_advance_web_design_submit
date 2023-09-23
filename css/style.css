@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
@@ -12,7 +14,7 @@ import click kore "style" tag chara baki tuku nite hobe */
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 img {
@@ -66,9 +68,9 @@ header {
   max-width: 150px;
 } */
 nav {
-  max-width: 53%;
+  max-width: 54%;
   /* width: 100%; */
-  flex-basis: 53%;
+  flex-basis: 54%;
 
 
   /* width er bodole flex-basis use kora jay,
@@ -90,7 +92,7 @@ nav ul li a {
   text-decoration: none;
   padding: 10px 15px;
   display: block;
-  border-radius: 8px;
+  border-radius: 11px;
   transition-duration: 0.4s;
   letter-spacing: -0.5px;
   font-family: "Poppins",
@@ -102,7 +104,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #0284c7;
+  background-color: #0a8bcc;
   color: #fff;
   /* transition-duration: 0.4s; */
 
@@ -190,18 +192,21 @@ nav ul li a:hover {
   padding: 0 56px;
 }
 .text-info h2 { 
+  color: #858789;
   font-size: 33px;
   line-height: 36px;
   margin-bottom: 10px;
   font-family: 'Lato', sans-serif;
 }
 .text-info p {
+  color: #858789;
   font-family: 'Lato', sans-serif;
   font-size: 15px;
   line-height: 23px;
   letter-spacing: 0.1px;
 }
 .text-info a {
+  color: #707273;
   font-family: 'Nunito', sans-serif;
   margin-top: 10px;
   font-style: italic;
@@ -209,7 +214,6 @@ nav ul li a:hover {
   font-size: 15px;
   font-weight: 500;
   text-decoration: none;
-  color: #000;
 
   /* "a" tag is not block element,
   to apply style, we have to make it display: block; */
@@ -254,6 +258,7 @@ nav ul li a:hover {
   color: #374151;
 }
 .single-experience p {
+  color: #374151;
   font-family: 'Lato', sans-serif;
   margin-top: 6px;
   line-height: 20px;
